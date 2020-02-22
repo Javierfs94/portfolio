@@ -1,3 +1,7 @@
+* {
+  font-family: "Roboto";
+}
+
 body {
   font-family: "Roboto";
   margin: 0;
@@ -8,6 +12,7 @@ header {
   display: flex;
   position: fixed;
   background-color: white;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   padding-left: 1em;
   width: 100%;
 }
@@ -46,7 +51,7 @@ header p {
 }
 
 header div#name {
-  margin: 0 auto;
+  margin: auto 2em;
 }
 
 nav ul {
@@ -64,9 +69,16 @@ div#photo {
 }
 
 div#photo img {
-  height: 150px;
-  width: 150px;
+  height: 175px;
+  width: 175px;
   border-radius: 100px;
+}
+
+main section > h3 {
+  background-color: #D32F2F;
+  color: white;
+  text-align: center;
+  padding: 1em;
 }
 
 main div#init {
@@ -76,6 +88,19 @@ main div#init {
   overflow: scroll;
   height: 140vh;
   width: 100%;
+}
+
+main section#aboutMe p {
+  text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+main section#aboutMe div#social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
 }
 
 main section#skills div#items {
@@ -92,10 +117,21 @@ main section#skills .imagen img {
   height: 70px;
 }
 
-.item a {
+a {
+  color: black;
   text-decoration: none;
+}
+
+.item {
+  margin: 1em;
+  padding: 0.5em;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(3, 38, 14, 0.16), 0 3px 6px rgba(5, 51, 19, 0.23);
 }
 
 footer {
   text-align: center;
+  background-color: #D32F2F;
+  color: white;
+  padding: 1em;
 }
