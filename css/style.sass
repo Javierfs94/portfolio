@@ -21,7 +21,8 @@ header
             height: 30px
             margin: 20px 30px 0px 0px
             position: absolute
-
+    a#close
+        display: inline
     a#close
         display: none
     div
@@ -42,9 +43,22 @@ header
         margin: auto 2em
 
 nav
+    left: -100%
     ul
+        line-height: 55px
         list-style: none
-        li
+        li                
+            position: relative
+            ::before
+                content: ''
+                background: #D32F2F
+                position: absolute
+                width: 0%
+                top: 0
+                left: 0
+                height: 100%
+                transition: 0.3s linear
+                z-index: -1
             a
                 text-decoration: none
 
@@ -64,29 +78,39 @@ main
             color: white
             text-align: center
             padding: 1em
-    div#init
+    section#home
         background: url(../img/fondo.webp)
         background-size: cover
         background-attachment: fixed
         overflow: scroll
         height: 140vh
         width: 100%
-
     section#aboutMe
         p
             text-align: justify
             padding-left: 1em
             padding-right: 1em
-
         div#social-media
             display: flex
             flex-wrap: wrap
             justify-content: space-around
             padding: 1em    
     section#skills
-        div#items
-            padding: 1em
-            margin: 1em
+        .border-bar
+        height: 15px
+        width: 80%
+        margin: 0 auto
+        margin-bottom: 50px
+        background-color: #D3D3D3
+        .bar-bar70
+            width: 70%
+            background-color: #58db58
+        .bar-bar50
+            width: 50%
+            background-color: #71BC78
+        .bar-bar25
+            width: 25%
+            background-color: #DB5858
         ul
             list-style: none
         .imagen
@@ -106,6 +130,10 @@ a
     padding: 0.5em
     text-align: center
     box-shadow: 0 3px 6px rgba(3, 38, 14,0.16), 0 3px 6px rgba(5,51,19,0.23)
+
+.option
+    padding: 30px 100px 30px 0px
+    color: white
 
 footer
     text-align: center

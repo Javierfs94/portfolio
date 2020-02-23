@@ -10,6 +10,9 @@
     <meta name="author" content="Francisco Javier Frías Serrano">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.4.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-ui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/effects.js" type="text/javascript" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Portfolio de Francisco Javier Frías Serrano</title>
@@ -32,20 +35,16 @@
 
     <nav>
         <ul>
-            <li><a href="#home"><i class="material-icons">arrow_upward</i>Inicio</a></li>
-            <li><a href="#aboutMe"><i class="material-icons">person_outline</i>Sobre mi</a></li>
-            <li><a href="#projects"><i class="material-icons">show_chart</i>Proyectos</a></li>
-            <li><a href="#skills"><i class="material-icons">poll</i>Habilidades</a></li>
-            <li><a href="#education"><i class="material-icons">school</i>Estudios</a></li>
-            <li><a href="#languages"><i class="material-icons">public</i>Idiomas</a></li>
+            <li><a class="option" href="#home"><i class="material-icons">arrow_upward</i>Inicio</a></li>
+            <li><a class="option" href="#aboutMe"><i class="material-icons">person_outline</i>Sobre mi</a></li>
+            <li><a class="option" href="#projects"><i class="material-icons">show_chart</i>Proyectos</a></li>
+            <li><a class="option" href="#skills"><i class="material-icons">poll</i>Habilidades</a></li>
+            <li><a class="option" href="#education"><i class="material-icons">school</i>Estudios</a></li>
+            <li><a class="option" href="#languages"><i class="material-icons">public</i>Idiomas</a></li>
         </ul>
     </nav>
 
     <main>
-
-        <div id="init">
-        </div>
-
         <section id="home">
         </section>
         <div id="photo">
@@ -76,7 +75,7 @@
 
         <section id="skills">
             <h3>Habilidades</h3>
-            <div class="items">
+            <div class="item">
                 <ul>
                     <li>
                         <div class="imagen">
@@ -84,15 +83,14 @@
                         </div>
                         <p><b>HTML5</b></p>
                         <div class="border-bar">
-                            <div class="bar bar70">70%</div>
+                            <div class="bar-bar70">70%</div>
                         </div>
                     </li>
-
                     <li>
                         <div class="imagen"><img class="css" src="./img/css.svg" alt="CSS3"></div>
                         <p><b>CSS3</b></p>
                         <div class="border-bar">
-                            <div class="bar bar70">70%</div>
+                            <div class="bar-bar70">70%</div>
                         </div>
                     </li>
                 </ul>

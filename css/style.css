@@ -25,6 +25,10 @@ header a img {
 }
 
 header a#close {
+  display: inline;
+}
+
+header a#close {
   display: none;
 }
 
@@ -54,8 +58,29 @@ header div#name {
   margin: auto 2em;
 }
 
+nav {
+  left: -100%;
+}
+
 nav ul {
+  line-height: 55px;
   list-style: none;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li ::before {
+  content: '';
+  background: #D32F2F;
+  position: absolute;
+  width: 0%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: 0.3s linear;
+  z-index: -1;
 }
 
 nav ul li a {
@@ -81,7 +106,7 @@ main section > h3 {
   padding: 1em;
 }
 
-main div#init {
+main section#home {
   background: url(../img/fondo.webp);
   background-size: cover;
   background-attachment: fixed;
@@ -103,9 +128,27 @@ main section#aboutMe div#social-media {
   padding: 1em;
 }
 
-main section#skills div#items {
-  padding: 1em;
-  margin: 1em;
+main section#skills {
+  height: 15px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-color: #D3D3D3;
+}
+
+main section#skills .bar-bar70 {
+  width: 70%;
+  background-color: #58db58;
+}
+
+main section#skills .bar-bar50 {
+  width: 50%;
+  background-color: #71BC78;
+}
+
+main section#skills .bar-bar25 {
+  width: 25%;
+  background-color: #DB5858;
 }
 
 main section#skills ul {
@@ -127,6 +170,11 @@ a {
   padding: 0.5em;
   text-align: center;
   box-shadow: 0 3px 6px rgba(3, 38, 14, 0.16), 0 3px 6px rgba(5, 51, 19, 0.23);
+}
+
+.option {
+  padding: 30px 100px 30px 0px;
+  color: white;
 }
 
 footer {
