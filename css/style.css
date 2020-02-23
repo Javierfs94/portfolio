@@ -128,8 +128,7 @@ main section#aboutMe div#social-media {
   padding: 1em;
 }
 
-main section#skills {
-  height: 15px;
+main section#skills .border-bar {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 50px;
