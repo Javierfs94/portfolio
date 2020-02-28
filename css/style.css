@@ -72,6 +72,7 @@ nav {
   height: 100%;
   overflow: scroll;
   left: -100%;
+  padding: 1em;
 }
 
 nav > ul {
@@ -80,11 +81,14 @@ nav > ul {
 }
 
 nav > ul > li {
+  padding: 1em;
   position: relative;
 }
 
 nav > ul > li a {
   text-decoration: none;
+  color: black;
+  padding-left: 0.5em;
 }
 
 nav > ul > li:hover i, nav > ul > li:hover a {
@@ -103,33 +107,8 @@ nav > ul > li::before {
   z-index: -1;
 }
 
-#menu {
-  position: relative;
-}
-
-#menu li a {
-  text-decoration: none;
-  color: black;
-}
-
-#menu li::before {
-  content: '';
-  background: #D32F2F;
-  position: absolute;
-  width: 0%;
-  top: 0;
-  left: 0;
-  height: 100%;
-  transition: 0.3s linear;
-  z-index: -1;
-}
-
-#menu li:hover:before {
+nav > ul > li:hover:before {
   width: 100%;
-}
-
-.option {
-  padding: 30px 100px 30px 0px;
 }
 
 #close {
@@ -233,11 +212,6 @@ a {
   padding: 0.5em;
   text-align: center;
   box-shadow: 0 3px 6px rgba(3, 38, 14, 0.16), 0 3px 6px rgba(5, 51, 19, 0.23);
-}
-
-.option {
-  padding: 30px 100px 30px 0px;
-  color: white;
 }
 
 footer {
