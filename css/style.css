@@ -85,11 +85,10 @@ nav > ul > li {
 
 nav > ul > li a {
   text-decoration: none;
-  color: black;
 }
 
 nav > ul > li:hover i, nav > ul > li:hover a {
-  color: white;
+  color: black;
 }
 
 nav > ul > li::before {
@@ -106,6 +105,11 @@ nav > ul > li::before {
 
 #menu {
   position: relative;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: black;
 }
 
 #menu li::before {
