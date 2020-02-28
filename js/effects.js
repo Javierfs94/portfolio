@@ -8,6 +8,7 @@ let ocultar = () => {
     });
     invisible = true;
     mostrarOpen();
+
 }
 
 let mostrarOpen = () => {
@@ -42,4 +43,6 @@ function init() {
     });
 
     $('nav li').click(mostrarOpen);
+
+
 };
