@@ -15,6 +15,10 @@ header
     padding-left: 1em
     width: 100%
     z-index: 2000
+    @media screen and ( min-width: 768px)
+        padding-left: 15em
+    @media screen and ( min-width: 1024px)
+        padding-left: 25em
     >div
 	    margin: 0 auto
     >a 
@@ -55,6 +59,8 @@ nav
     overflow: scroll
     left: -100%
     padding: 1em
+    @media screen and ( min-width: 768px)
+        left: 0
     >ul
         line-height: 55px
         list-style: none
@@ -94,6 +100,8 @@ div#photo
         border-radius: 100px
 
 main
+    @media screen and ( min-width: 768px)
+        padding-left: 15em
     section
         > h3
             background-color: $primaryColor
@@ -151,6 +159,10 @@ a
 .material-icons
     padding-right: 0.5em
     color: $primaryColor
+
+.menu
+    @media screen and ( min-width: 768px)
+        display: none
 
 .item
     margin: 1em
