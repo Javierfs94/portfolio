@@ -44,6 +44,7 @@ header
 	    margin: 0px 0px 10px 5px
 	    font-size: 14px
 	    padding-left: 5px
+        padding: 1em
     h2
 	    font-size: 20px
 	    color: #D32F2F;
@@ -118,14 +119,19 @@ main
     section#aboutMe
         p
             text-align: justify
-            padding-left: 1em
-            padding-right: 1em
+            margin-top: 1em
+            padding: 1em
         div#social-media
             display: flex
             flex-wrap: wrap
             justify-content: space-around
-            padding: 1em    
+            padding: 1em
+            margin-bottom: 1em  
     section#skills
+        .item>ul
+            @media screen and ( min-width: 768px)
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
         .border-bar
             width: 80%
             margin: 0 auto
