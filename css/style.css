@@ -68,35 +68,23 @@ header div#name {
 
 @media screen and (min-width: 768px) {
   header div#name {
-    margin: 2em 40%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  header div#name {
-    margin: 2em 50%;
+    margin: 1em 40%;
   }
 }
 
 nav {
   position: fixed;
-  top: 100px;
+  top: 140px;
   background-color: white;
   height: 100%;
   left: -100%;
-  margin-top: 2em;
   padding: 1em 2.5em;
 }
 
 @media screen and (min-width: 768px) {
   nav {
     left: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  nav {
-    margin-top: 5em;
+    top: 95px;
   }
 }
 
@@ -155,7 +143,7 @@ div#photo img {
 
 @media screen and (min-width: 768px) {
   main {
-    padding-left: 30%;
+    padding-left: 20%;
   }
 }
 
