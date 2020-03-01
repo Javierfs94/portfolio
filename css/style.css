@@ -106,7 +106,8 @@ nav > ul {
 }
 
 nav > ul > li {
-  padding: 1em;
+  padding: 0 1em;
+  position: relative;
   position: relative;
 }
 
