@@ -149,7 +149,7 @@ div#photo img {
 
 @media screen and (min-width: 768px) {
   main {
-    padding-left: 20%;
+    padding-left: 30%;
   }
 }
 
@@ -173,24 +173,6 @@ main section#aboutMe p {
   text-align: justify;
   margin-top: 1em;
   padding: 1em;
-}
-
-main section#aboutMe div#social-media {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 1em;
-  margin-bottom: 1em;
-}
-
-@media screen and (min-width: 768px) {
-  main section#aboutMe div#social-media {
-    display: block;
-    text-align: center;
-  }
-  main section#aboutMe div#social-media a {
-    padding: 1em;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -236,9 +218,65 @@ main section#skills ul {
   list-style: none;
 }
 
-main section#skills .imagen img {
+main section#skills ul li .imagen img {
   width: 70px;
   height: 70px;
+}
+
+main section#skills ul li p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+main section#languages p {
+  padding: 0.5em;
+}
+
+main section#contact div#form h4 {
+  text-align: center;
+  color: white;
+  background-color: #D32F2F;
+  padding: 20px;
+  font-size: 18px;
+}
+
+main section#contact div#form div.input-group {
+  margin-top: 1em;
+}
+
+main section#contact div#form div.input-group input {
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 1em;
+}
+
+main section#contact div#form div.input-group input:focus {
+  outline: 0;
+  border-bottom: 3px solid #D32F2F;
+}
+
+main section#contact div#form div#textarea {
+  margin-top: 1em;
+}
+
+main section#contact div#form div#textarea span {
+  text-align: center;
+  color: black;
+}
+
+main section#contact div#form div#textarea textarea {
+  margin-top: 1em;
+  padding: 1em;
+}
+
+main section#contact div#form button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+main section#contact div#form button img {
+  width: 30px;
+  height: 30px;
 }
 
 a {
@@ -251,9 +289,40 @@ a {
   color: #D32F2F;
 }
 
+div.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  div.social-media {
+    display: block;
+    text-align: center;
+  }
+  div.social-media a {
+    padding: 1em;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu {
     display: none;
+  }
+}
+
+.group-items {
+  margin: 1em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .group-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

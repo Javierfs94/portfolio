@@ -102,8 +102,8 @@ div#photo
         border-radius: 100px
 
 main
-    @media screen and ( min-width: 768px)
-        padding-left: 20%
+    @media screen and (min-width: 768px)
+        padding-left: 30%
     section
         > h3
             background-color: $primaryColor
@@ -122,20 +122,12 @@ main
             text-align: justify
             margin-top: 1em
             padding: 1em
-        div#social-media
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-around
-            padding: 1em
-            margin-bottom: 1em
-            @media screen and ( min-width: 768px)
-                display: block
-                text-align: center
-                a
-                    padding: 1em
+    section#projects
+
+
     section#skills
         .item>ul
-            @media screen and ( min-width: 768px)
+            @media screen and (min-width: 768px)
                 display: grid
                 grid-template-columns: 1fr 1fr 1fr
         .border-bar
@@ -160,10 +152,49 @@ main
             background-color: #d43030    
         ul
             list-style: none
-        .imagen
-            img
-                width: 70px
-                height: 70px
+            li
+                .imagen
+                    img
+                        width: 70px
+                        height: 70px
+                p
+                    margin-top: 0.5em
+                    margin-bottom: 0.5em
+    section#languages
+        p
+            padding: 0.5em
+    
+    section#contact
+        div#form
+            h4
+                text-align: center
+                color: white
+                background-color: $primaryColor
+                padding: 20px
+                font-size: 18px
+            div.input-group
+                margin-top: 1em
+                input
+                    border: none
+                    border-bottom: 1px solid gray
+                    padding: 1em
+                    &:focus
+                        outline: 0
+                        border-bottom: 3px solid $primaryColor
+            div#textarea
+                margin-top: 1em
+                span
+                    text-align: center
+                    color: black
+                textarea
+                    margin-top: 1em
+                    padding: 1em
+            button
+                margin-top: 1em
+                margin-bottom: 1em
+                img
+                    width: 30px
+                    height: 30px
 a
     color: black
     text-decoration: none
@@ -172,9 +203,29 @@ a
     padding-right: 0.5em
     color: $primaryColor
 
+div.social-media
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    padding: 1em
+    margin-bottom: 1em
+    @media screen and (min-width: 768px)
+        display: block
+        text-align: center
+        a
+            padding: 1em
+
 .menu
-    @media screen and ( min-width: 768px)
+    @media screen and (min-width: 768px)
         display: none
+
+.group-items
+    margin: 1em
+    padding: 0.5em
+    text-align: center
+    @media screen and (min-width: 768px)
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
 
 .item
     margin: 1em
@@ -187,6 +238,6 @@ footer
     background-color: $primaryColor
     color: white
     padding: 1em
-    @media screen and ( min-width: 768px)
+    @media screen and (min-width: 768px)
         margin-left: 30%
     
