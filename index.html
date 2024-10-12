@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -39,9 +39,54 @@
                     </li>
                 </ul>
             </div>
+        </div>         
+    </nav>-->
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target=".nav-col" 
+                aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse container-fluid navbar 
+                navbar-expand-sm navbar-dark bg-dark nav-col" 
+                id="scrollspy">
+                <a class="nav-link active" href="#dataStructs">
+                    Data Structures</a>
+                <a class="nav-link" href="#algo">
+                    Algorithms</a>
+                <nav class="navbar" id="scrollspy">
+                    <div class="dropdown">
+                        <button class="btn btn-primary 
+                            dropdown-toggle ms-4 my-1" 
+                            type="button" id="dropdownMenuButton1" 
+                            data-bs-toggle="dropdown" 
+                            aria-expanded="false" href="#other">
+                            Nested Navbar
+                        </button>
+                        <ul class="dropdown-menu bg-dark" 
+                            aria-labelledby="dropdownMenuButton1">
+                            <nav class="navbar navbar-expand-sm 
+                                navbar-dark bg-dark" id="scrollspy">
+                                <a class="nav-link ms-3 my-1" 
+                                    href="#bootstrap">
+                                    Bootstrap
+                                </a>
+                                <a class="nav-link ms-3 my-1" 
+                                    href="#cpp">
+                                    C++
+                                </a>
+                            </nav>
+                        </ul>
+                    </div>
+                </nav>
+            </nav>
         </div>
     </nav>
-
 
     <main class="container">
 
