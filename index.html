@@ -2,117 +2,234 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Mi portfolio">
-    <meta name="keywords" content="responsive,portfolio,web-developer,frontend,diseño-web">
-    <meta name="author" content="Francisco Javier Frías Serrano">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portfolio de Francisco Javier Frías Serrano</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+  <!-- MENU ENCABEZADO -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">EJ Media</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Stack</a>
-                    </li>
-                </ul>
-            </div>
 
+
+
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-info">
+    <a class="navbar-brand" href="#">Javier</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Next Steps
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Contact us</a>
+            <a class="dropdown-item" href="#">Subscribe to the blog</a>
+            <a class="dropdown-item" href="#">Sign up to our newsletter</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <main>
+
+
+
+  </main>
+
+
+
+  <!-- SECCION INICIO -->
+  <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+      <div class="contenedor-img">
+        <img src="assets/img/me.jpeg" alt="">
+      </div>
+      <h1>Francisco Javier Frías Serrano</h1>
+      <h2>Desarrollador Web</h2>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/javifs94/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION SOBRE MI -->
+  <section id="sobremi" class="sobremi">
+    <div class="content">
+      <h2>Sobre Mí</h2>
+
+      <div class="row">
+        <!-- datos personales -->
+        <div class="col">
+          <h3>Datos Personales</h3>
+          <ul>
+            <li>
+              <strong>Teléfono</strong>
+              657785664
+            </li>
+            <li>
+              <a href="mailto:javifs94@gmail.com@gmail.com">Contact Me</a>
+            </li>
+            <li>
+              <strong>Github</strong>
+              <a target="_blank" href="https://github.com/Javierfs94" style="color:white">Acceso a github</a>
+            </li>
+          </ul>
+          <button>
+            <a target="_blank" href="https://github.com/Javierfs94/Javierfs94/blob/master/Javier_Frias_CV_ES.pdf"
+              style="color:white">Currículum</a> <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
         </div>
-    </nav>
-
-    <main class="container">
-
-        <div class="container experiencia">
-            <div class="row">
-                <div class="col">
-                    Column
-                </div>
-                <div class="col">
-                    Column
-                </div>
-                <div class="col">
-                    Column
-                </div>
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="interes">
+              <i class="fa-solid fa-plane"></i>
+              <span>VIAJAR</span>
             </div>
-        </div>
-
-        <div class="container experiencia">
-            <div class="row">
-                <div class="col">
-                    Column
-                </div>
-                <div class="col">
-                    Column
-                </div>
-                <div class="col">
-                    Column
-                </div>
+            <div class="interes">
+              <i class="fa-solid fa-headphones"></i>
+              <span>MUSICA</span>
             </div>
-        </div>
-
-        <div class="container projects">
-            <div class="row">
-                <div class="col">
-                    Column
-                </div>
-                <div class="col">
-                    Column
-                </div>
-                <div class="col">
-                    Column
-                </div>
+            <div class="interes">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>JUEGOS DE MESA</span>
             </div>
+            <!-- <div class="interes">
+              <i class="fa-solid fa-person-hiking"></i>
+              <span>DEPORTE</span>
+            </div> -->
+          </div>
         </div>
+      </div>
+  </section>
 
-        <div class="container stack">
-            <div class="row">
-                <div class="col">
-                    Column
-                </div>
-                <div class="col">
-                    Column
-                </div>
-                <div class="col">
-                    Column
-                </div>
+  <!-- SECCION PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+      <h2>Mis Proyectos</h2>
+      <div class="galeria">
+        <div class="proyecto">
+          <img src="img/p1.jpg" alt="">
+          <div class="overlay">
+            <h3><a target="_blank" href="https://github.com/YolsAlm/portalempleo">Portal de Empleo (Proyecto Final
+                DAW)</a></h3>
+            <p>PHP, HTML y CSS</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <img src="img/p2.jpg" alt="">
+          <div class="overlay">
+            <h3>Pruebas</h3>
+            <p>JavaScript, HTML y CSS</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <img src="img/p3.jpg" alt="">
+          <div class="overlay">
+            <h3><a target="_blank" href="https://github.com/YolsAlm/Calculadora">Calculadora</a></h3>
+            <p>HMTL, JavaScript y Bootstrap</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION SKILLS -->
+  <section class="skills" id="skills">
+    <div class="contenido-seccion">
+      <h2>Skills</h2>
+      <div class="fila">
+        <!-- Technical Skill -->
+        <div class="col">
+          <h3>Experiencia Tecnológica</h3>
+          <div class="skill">
+            <span>Programación:Java, Python, Basht, PHP, programacion, HTML y CSS</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>60%</span>
+              </div>
             </div>
-        </div>
-    </main>
+          </div>
+          <div class="skill">
+            <span>Sistemas:Linux, Microsoft, Redhat, Debian</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>BBDD: Oracle, Mysql, Postgres, NoSQL</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Monitorización: Icinga, Grafana, Zabbix</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>65%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Almacenamiento: SAN/NAS, Nextcloud</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>65%</span>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Backup: Veeam, Duplicati</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <a href="#inicio" class="arriba">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <p>© 2024 Javier Frías. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 
 
-    <footer class="container">
-        <p>Francisco Javier Frías Serrano</p>
-        <!-- <p><a href="licencias.html">Licencias</a> -->
-    </footer>
-
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
