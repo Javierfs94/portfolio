@@ -2,4 +2,6 @@
 
 Github Page: https://javierfs94.github.io/portfolio/
 
-Migrating my portfolio to bootstrap 5
+
+# Coming soon
+Actualizando el portfolio a un diseño más moderno y poniéndolo al día.
