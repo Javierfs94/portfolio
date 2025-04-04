@@ -6,17 +6,17 @@ html {
 body {
   font-family: 'Arial', sans-serif;
   transition: background 0.3s, color 0.3s;
-  padding-top: 56px;
+  padding-top: 56px; /* Espacio para el navbar fijo */
 }
 
 .light-mode {
-  background-color: #ffffff;
-  color: #333;
+  background-color: #ffffff; /* Fondo claro */
+  color: #333; /* Texto oscuro */
 }
 
 .dark-mode {
-  background-color: #121212;
-  color: #f5f5f5;
+  background-color: #121212; /* Fondo oscuro */
+  color: #f5f5f5; /* Texto claro */
 }
 
 .uppercase {
@@ -24,39 +24,45 @@ body {
 }
 
 /* Navbar */
-.navbar {
-  transition: background 0.3s;
+
+/* Estilo del navbar en modo claro */
+body.light-mode .navbar {
+  background-color: #f8f9fa; /* Fondo claro */
+  color: #333; /* Texto oscuro */
 }
 
-.light-mode .navbar {
-  background-color: #f8f9fa;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+body.light-mode .navbar .navbar-nav .nav-link {
+  color: #333; /* Enlaces oscuros */
 }
 
-.dark-mode .navbar {
-  background-color: #1c1c1c;
-  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+body.light-mode .navbar .navbar-brand {
+  color: #333; /* Marca en modo claro */
 }
 
-/* .button {
-  height: 3rem;
-  width: 100%;
-  border-radius: 1.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 246 228 / var(--tw-bg-opacity));
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  text-align: center;
-  font-weight: 700;
-  line-height: 2rem;
-  --tw-text-opacity: 1;
-  color: rgb(30 41 59 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(.4,0,.2,1);
-  transition-duration: .3s;
-} */
+/* Estilo del navbar en modo oscuro */
+body.dark-mode .navbar {
+  background-color: #343a40; /* Fondo oscuro */
+  color: white; /* Texto claro */
+}
 
-/* Botones y select */
+body.dark-mode .navbar .navbar-nav .nav-link {
+  color: #f8f9fa; /* Enlaces claros */
+}
+
+body.dark-mode .navbar .navbar-brand {
+  color: #f8f9fa; /* Marca en modo oscuro */
+}
+
+/* Efecto de hover para los enlaces */
+body.light-mode .navbar .navbar-nav .nav-link:hover {
+  color: #0056b3; /* Enlaces oscuros al pasar el ratón */
+}
+
+body.dark-mode .navbar .navbar-nav .nav-link:hover {
+  color: #ced4da; /* Enlaces claros al pasar el ratón */
+}
+
+/* Botón de modo oscuro */
 #toggle-theme {
   border: none;
   cursor: pointer;
@@ -64,6 +70,28 @@ body {
 
 #language-select {
   margin-left: 10px;
+}
+
+/* Iconos y botones */
+a {
+  text-decoration: none;
+}
+
+/* Estilos de los íconos */
+.text-dark {
+  color: #333; /* Color oscuro para íconos en modo claro */
+}
+
+.text-dark:hover {
+  color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+
+.text-primary {
+  color: #0a66c2; /* Color de los íconos de LinkedIn */
+}
+
+.text-primary:hover {
+  color: #004182; /* Cambio de color al pasar el ratón */
 }
 
 /* Secciones */

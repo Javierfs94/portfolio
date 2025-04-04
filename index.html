@@ -1,69 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="light-mode">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-          <div class="d-flex justify-content-between align-items-center w-100">
-      
-            <!-- Marca izquierda -->
-            <a class="navbar-brand fw-bold" href="#">Mi Portafolio</a>
-      
-            <!-- Enlaces al centro -->
-            <ul class="navbar-nav flex-row gap-4 justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#about" id="nav-about">Sobre mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#stack" id="nav-stack">Stack</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#projects" id="nav-projects">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-uppercase" href="#contact" id="nav-contact">Contacto</a>
-              </li>
-            </ul>
-      
-            <!-- Selectores a la derecha -->
-            <div class="d-flex align-items-center gap-2">
-              <button id="toggle-theme" class="btn btn-secondary">🌙</button>
-              <select id="language-select" class="form-select w-auto">
-                <option value="es">ES</option>
-                <option value="en">EN</option>
-              </select>
+            <div class="d-flex w-100 justify-content-between align-items-center">
+                <!-- Logo a la izquierda -->
+                <a class="navbar-brand" href="#">Mi Portafolio</a>
+    
+                <!-- Enlaces centrados -->
+                <ul class="navbar-nav mx-auto d-flex gap-4">
+                    <li class="nav-item"><a class="nav-link uppercase" href="#about" id="about">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link uppercase" href="#stack" id="stack">Stack</a></li>
+                    <li class="nav-item"><a class="nav-link uppercase" href="#projects" id="projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link uppercase" href="#contact" id="contact">Contacto</a></li>
+                </ul>
+    
+                <!-- Botones y redes sociales a la derecha -->
+                <div class="d-flex align-items-center gap-3">
+                    <button id="toggle-theme" class="btn btn-secondary">🌙</button>
+                    <select id="language-select" class="form-select d-inline-block w-auto">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                    </select>
+                    <a href="https://www.linkedin.com/in/javifs94" class="text-primary" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/Javierfs94" class="text-dark" target="_blank"><i class="bi bi-github"></i></a>
+                </div>
             </div>
-      
-          </div>
         </div>
-      </nav>
-      
+    </nav>
+    
 
-    <header class="text-center py-5">
-        <h1 id="title">Bienvenido a mi portafolio</h1>
-    </header>
-
-
-    <section id="about" class="container py-5">
-        <h2 id="about-title">Sobre mí</h2>
+    <!-- Contenido de la página -->
+    <section id="about">
+        <h1 id="about-title">Sobre mí</h1>
         <p id="about-text">Soy un desarrollador web apasionado por la tecnología.</p>
     </section>
 
-    <section id="stack" class="container py-5">
-        <h2 id="about-title">Tecnologías y herramientas que utilizo</h2>
-        <p id="about-text">Soy un desarrollador web apasionado por la tecnología.</p>
+    <section id="stack">
+        <h2 id="stack-title">Stack</h2>
+        <p id="stack-text">Tecnologías que utilizo...</p>
     </section>
 
-    <section id="projects" class="container py-5">
+    <section id="projects">
         <h2 id="projects-title">Proyectos</h2>
         <ul>
             <li id="project1">Proyecto 1</li>
@@ -71,21 +57,12 @@
         </ul>
     </section>
 
-    <section id="contact" class="container py-5">
+    <section id="contact">
         <h2 id="contact-title">Contacto</h2>
         <p id="contact-text">Puedes contactarme en mi correo: <a href="mailto:javifs94@gmail.com">javifs94@gmail.com</a></p>
-        </p>
     </section>
 
-    <footer class="px-8 md:px-20 mt-20 pt-4 flex flex-col items-center dark:text-gray-200">
-        <a class="button"
-            href="#">Volver al inicio</a>
-        <p class="mt-10 text-sm cursor-default">Haciendo realidad tu visión</p>
-        <p class="text-sm cursor-default text-center">© 2025 Francisco Javier Frías Serrano. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script> <!-- Enlace a tu archivo JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

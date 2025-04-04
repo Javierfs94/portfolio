@@ -30,20 +30,26 @@ langSelector.addEventListener("change", () => {
     applyLanguage(langSelector.value);
 });
 
-// Cambiar tema claro/oscuro
-themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    document.body.classList.toggle("light-mode");
-    themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-    localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+themeToggle.addEventListener("click", function () {
+  // Cambiar tema en el body
+  document.body.classList.toggle("dark-mode");
+  document.body.classList.toggle("light-mode");
+
+  // Cambiar icono de modo
+  this.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+
+  // Guardar el tema actual en localStorage
+  localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
 });
 
 // Aplicar tema guardado en localStorage
 function applyInitialTheme() {
-    const savedTheme = localStorage.getItem("theme") || "light";
-    document.body.classList.toggle("dark-mode", savedTheme === "dark");
-    document.body.classList.toggle("light-mode", savedTheme !== "dark");
-    themeToggle.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+  const savedTheme = localStorage.getItem("theme") || "light";
+  document.body.classList.toggle("dark-mode", savedTheme === "dark");
+  document.body.classList.toggle("light-mode", savedTheme !== "dark");
+
+  // Cambiar el icono según el tema
+  document.getElementById("toggle-theme").textContent = savedTheme === "dark" ? "☀️" : "🌙";
 }
 
 // Inicialización
