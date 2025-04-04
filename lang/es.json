@@ -6,6 +6,10 @@
     "project1": "Proyecto 1",
     "project2": "Proyecto 2",
     "contact-title": "Contacto",
-    "contact-text": "Puedes contactarme en mi correo: <a href='mailto:email@example.com'>email@example.com</a>"
+    "contact-text": "Puedes contactarme en mi correo: <a href='mailto:email@example.com'>email@example.com</a>",
+    "nav-about": "Sobre mí",
+    "nav-stack": "Stack",
+    "nav-projects": "Proyectos",
+    "nav-contact": "Contacto"
   }
   
