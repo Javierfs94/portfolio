@@ -1,0 +1,11 @@
+{
+    "title": "Bienvenido a mi portafolio",
+    "about-title": "Sobre mí",
+    "about-text": "Soy un desarrollador web apasionado por la tecnología.",
+    "projects-title": "Proyectos",
+    "project1": "Proyecto 1",
+    "project2": "Proyecto 2",
+    "contact-title": "Contacto",
+    "contact-text": "Puedes contactarme en mi correo: <a href='mailto:email@example.com'>email@example.com</a>"
+  }
+  
