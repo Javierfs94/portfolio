@@ -31,6 +31,12 @@ body.light-mode .navbar {
   color: #333; /* Texto oscuro */
 }
 
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
 body.light-mode .navbar .navbar-nav .nav-link {
   color: #333; /* Enlaces oscuros */
 }
@@ -51,6 +57,10 @@ body.dark-mode .navbar .navbar-nav .nav-link {
 
 body.dark-mode .navbar .navbar-brand {
   color: #f8f9fa; /* Marca en modo oscuro */
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--bs-primary);
 }
 
 /* Efecto de hover para los enlaces */
@@ -79,8 +89,8 @@ a {
 
 /* Estilos de los iconos de redes sociales */
 .social-icons a {
-  font-size: 1.5rem;
-  transition: transform 0.2s ease, color 0.2s ease;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease;
 }
 
 .social-icons a:hover {
@@ -151,3 +161,5 @@ li {
 .dark-mode li:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+
