@@ -6,7 +6,7 @@ html {
 body {
   font-family: "Arial", sans-serif;
   transition: background 0.3s, color 0.3s;
-  padding-top: 56px; /* Espacio para el navbar fijo */
+  /* padding-top: 56px; */
 }
 
 .light-mode {
@@ -21,6 +21,26 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* Navbar */
@@ -133,11 +153,6 @@ section {
   padding: 40px 0;
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
 /* Proyectos */
 ul {
   list-style: none;
@@ -162,4 +177,18 @@ li {
   background: rgba(255, 255, 255, 0.2);
 }
 
+#navbar {
+  position: sticky;
+  top: 0;
+}
 
+footer {
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
+#personal-photo {
+  height: 400px;
+  width: 300px;
+}
