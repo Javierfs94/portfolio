@@ -6,17 +6,81 @@ html {
 body {
   font-family: "Arial", sans-serif;
   transition: background 0.3s, color 0.3s;
-  /* padding-top: 56px; */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #333;
+  --bg-color-dark: #121212;
+  --text-color-dark: #f5f5f5;
+  --card-bg-light: #f8f9fa;
+  --card-bg-dark: #1e1e1e;
 }
 
 .light-mode {
-  background-color: #ffffff; /* Fondo claro */
-  color: #333; /* Texto oscuro */
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+  --card-bg: var(--card-bg-light);
 }
 
 .dark-mode {
-  background-color: #121212; /* Fondo oscuro */
-  color: #f5f5f5; /* Texto claro */
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+  --card-bg: var(--card-bg-dark);
+}
+
+/* Tarjetas del stack tecnológico */
+.tech-card {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tech-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del botón GitHub que se adapta al tema */
+.btn-github {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  border: 1px solid;
+}
+
+/* Modo claro */
+.light-mode .btn-github {
+  color: #333;
+  border-color: #333;
+  background-color: transparent;
+}
+
+.light-mode .btn-github:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Modo oscuro */
+.dark-mode .btn-github {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  background-color: transparent;
+}
+
+.dark-mode .btn-github:hover {
+  background-color: #f8f9fa;
+  color: #121212;
+}
+
+/* Fondo adaptado para modo claro */
+.light-mode .tech-card {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Fondo adaptado para modo oscuro */
+.dark-mode .tech-card {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
 }
 
 .uppercase {
@@ -127,25 +191,25 @@ a {
 /* Modo oscuro */
 @media (prefers-color-scheme: dark) {
   .social-icons a:hover {
-    color: #f8f9fa; /* color claro sobre fondo oscuro */
+    color: #f8f9fa;
   }
 }
 
 /* Estilos de los íconos */
 .text-dark {
-  color: #333; /* Color oscuro para íconos en modo claro */
+  color: #333;
 }
 
 .text-dark:hover {
-  color: #0056b3; /* Cambio de color al pasar el ratón */
+  color: #0056b3;
 }
 
 .text-primary {
-  color: #0a66c2; /* Color de los íconos de LinkedIn */
+  color: #0a66c2;
 }
 
 .text-primary:hover {
-  color: #004182; /* Cambio de color al pasar el ratón */
+  color: #004182;
 }
 
 /* Secciones */
@@ -179,16 +243,65 @@ li {
 
 #navbar {
   position: sticky;
+  z-index: 1050;
   top: 0;
 }
 
 footer {
   display: grid;
-  min-height: 100dvh;
   grid-template-rows: auto 1fr auto;
 }
 
 #personal-photo {
   height: 400px;
   width: 300px;
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.project-image-wrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer-custom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}
+
+.footer-custom a:hover {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.card {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+section,
+footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.custom-section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
