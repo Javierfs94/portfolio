@@ -2,6 +2,7 @@
   "about-title": "About Me",
   "about-text": "Hi, I'm Francisco Javier Frías Serrano, a web developer with training in systems administration and application development. I have worked with technologies such as PHP, JavaScript, HTML/CSS, and databases like PostgreSQL, MySQL, and Oracle, both in plugin development and in the maintenance of complex web applications.<br><br>Throughout my experience, I have collaborated on projects using frameworks like Laravel, CakePHP, and CodeIgniter, as well as CMS platforms like WordPress and Moodle. I enjoy writing clean code and working in teams using agile methodologies, integrating tools like Git, Jira, and Slack into my daily workflow.<br><br>I'm currently focused on continuing to grow as a developer, exploring new technologies, and sharing my personal projects on GitHub.",
   "projects-title": "Projects",
+  "tools-title": "Tools",
   "stack-title": "Stack IT",
   "database-title": "Database",
   "other-technologies-title": "Other Technologies",
