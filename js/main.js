@@ -1,4 +1,4 @@
-// import { loadLanguage } from './i18n.js';
+import { loadLanguage } from './i18n.js';
 
 const langSelector = document.getElementById("language-select");
 const themeToggle = document.getElementById("toggle-theme");
@@ -23,7 +23,7 @@ function detectInitialLanguage() {
 
     // 2. Si no, detecta el idioma del navegador
     const browserLang = navigator.language.slice(0, 2);
-    return browserLang === "es" ? "es" : "en";
+    return browserLang === "en" ? "en" : "es";
 }
 
 langSelector.addEventListener("change", () => {
@@ -55,4 +55,4 @@ function applyInitialTheme() {
 // Inicialización
 const initialLang = detectInitialLanguage();
 applyInitialTheme();
-// applyLanguage(initialLang);
+applyLanguage(initialLang);
