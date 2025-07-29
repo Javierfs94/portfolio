@@ -362,3 +362,14 @@ footer {
   transform: scale(1.03);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 576px) {
+  .navbar-logo {
+    height: 32px;
+  }
+}
